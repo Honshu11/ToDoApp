@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'PT Sans', sans-serif;
+}
+
+body{
+	background: url(codingWorkSpaceNew.jpg);
+}
+
+.mainContainer {
+	position: absolute;
+	height: 25pc;
+	width: 20pc;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	backdrop-filter: blur;
+	box-shadow: 0 0 55px black;
+}
+
+header {
+	padding-left: 60px;
+	position: center;
+	margin: auto;
+	justify-content: center;
+	align-self: center;
+	align-content: center;
+}
+
+.addText {
+	text-align: center;
+	border-radius: 25px;
+	position: top;
+	height: 2px;
+	width: 60%;
+	margin: auto;
+	top: 40px;
+	right: 0px;
+	left: 0px;
+	bottom: 25px;
+	outline: none;
+	border: thin;
+	padding: 25px;
+	margin-left: 35px;
+}
+
+.addBtn {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 25px;
+	padding: 5px;
+	margin: auto;
+	cursor: pointer;
+	top: 5px;
+	left: 5px;
+}
+
+.todoListContainer {
+	position: center;
+	height: 75%;
+	margin: auto;
+	width: 90;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.todoList {
+	min-width: 30%;
+	list-style: none;
+	margin: 1px;
+	font-size: 1rem;
+	padding-left: 10px;
+}
+
+.todo {
+	margin: 1px;
+	color: black;
+	font-size: 1.5rem;
+	padding-left: 10px;
+}
+
+.todo li {
+	flex: 1;
+}
+
+
+.fa.fa-plus.fa-lg:hover{
+	color: limegreen;
+}
+
+
+.completeBtn {
+	background: chartreuse;
+	font-size: medium;
+	border: thin;
+	border-color: black;
+	padding: 2px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.deleteBtn {
+	background: crimson;
+	font-size: medium;
+	border: thin;
+	border-color: black;
+	padding: 2px;
+	margin-left: 10px;
+	cursor: pointer;
+
+}
+
+.fa.fa-trash, .fa.fa-check, .fa.fa-plus{   /*Targets the icons for trash, checkmark and addBtn in html, makes them non-clickable*/
+	pointer-events: none;
+}
+
+.finished{  /*created element on line 58 in todo.js*/
+	text-decoration: line-through;
+}

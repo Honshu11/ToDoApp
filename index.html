@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<title>The Todo List</title>
+	</head>
+	<body>
+		<div class="mainContainer" id="container">
+			<header>
+				<h1>The <span style="color: crimson;">ToDo App</span></h1>
+			</header>
+			<form>
+				<input type="text" class="addText" placeholder="Enter a task to complete..">
+				<button class="addBtn" type="submit">
+					<i class="fa fa-plus fa-lg"></i>
+				</button>
+			</form>
+			<div class="todoListContainer" id="list">
+				<ul class="todoList">
+					<div class="todo">
+					   <li id="todoId"></li>
+					</div>
+				</ul>
+			</div> 
+		</div>
+
+		<script src="todo.js"></script>
+	</body>
+</html>
